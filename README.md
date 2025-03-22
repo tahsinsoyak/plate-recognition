@@ -11,15 +11,18 @@ Key features include:
 - Visual output with bounding boxes and license plate overlays
 - CSV export of detection and tracking results
 
-## Repository Structure
+## Project Structure
 ```
-.
-├── main.py                 # Entry point containing core detection and tracking logic
-├── add_missing_data.py     # Handles interpolation of missing tracking data
-├── sort.py                 # Implementation of SORT tracking algorithm
-├── util.py                 # Helper functions for data processing
-├── visualize.py           # Visualization tools for detection results
-└── requirements.txt       # Project dependencies
+plate-recognition/
+├── src/
+│   ├── detection/          # Detection modules
+│   ├── tracking/           # Tracking modules
+│   ├── visualization/      # Visualization scripts
+│   ├── utils/              # Utility functions
+│   ├── main.py             # Main entry point
+│   ├── config.py           # Configuration file
+├── models/                 # Pre-trained models
+├── data/                   # Input/output data
 ```
 
 ## Usage Instructions
